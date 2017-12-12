@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  height: 64px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+nav {
+  float: right;
+}
+nav ul {
+  align-self: flex-end;
+  display: inline-flex;
+}
+nav li {
+  margin: 8px;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+}
+.banner img {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+}
+.banner-content {
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 20%;
+
+}
+.banner-button {
+  background-color: darkgrey;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.section2 {
+  display: flex;
+  width: 100%;
+    margin-bottom: 32px;
+}
+.main-article {
+  width: 60%;
+  margin: 24px 32px;
+}
+.main-article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+.main-article h3 {
+  margin-bottom:24px;
+}
+.sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+  margin-top: 16px;
+  background-color: whitesmoke;
+
+}
+.story {
+  display: flex;
+  align-items: center;
+}
+.story img {
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+.story-text {
+  display: flex;
+  width: 65%;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: cadetblue;
+}
+
+.section3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.section3 h3 {
+}
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+
+  margin: 32px 50px;
+}
+.course {
+  width: 20%;
+  display: flex;
+  margin: 32px;
+  flex-flow: column wrap;
+}
+.course img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.section4 {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.theis-main video {
+  width: 50%;
+  height: auto;
+}
+.thesis-content{
+  width: 100%;
+  display: flex;
+}
+.thesis-main {
+  width: 60%;
+}
+.thesis-main video{
+  width: 100%;
+  height: auto;
+}
