@@ -1,3 +1,5 @@
+CSS
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +15,9 @@ header{
 .logo {
   display: flex;
   align-items: center;
+}
+.icons {
+  display: none;
 }
 nav {
   float: right;
@@ -84,11 +89,16 @@ nav li {
 .story {
   display: flex;
   align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
 }
-.story img {
-  height: auto;
+.image-mobile{
+  display: none;
+}
+.image-desktop {
+  display: block;
   width: 35%;
-  padding: 16px;
+  height: auto;
 }
 .story-text {
   display: flex;
@@ -206,6 +216,11 @@ footer ul li {
   nav {
     display: none;
   }
+  .icons {
+    display: inline-flex;
+    width: 75%;
+    justify-content: space-between;
+  }
   .banner{
     flex-direction: column;
   }
@@ -231,13 +246,14 @@ footer ul li {
     flex-flow: column nowrap;
     background-color: whitesmoke;
     width: 100%;
-    padding: 16px;
   }
-  .story img {
+  .image-desktop {
+    display: none;
+  }
+  .image-mobile{
+    display: block;
     width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
   }
   .story-text {
     width: 100%;
@@ -248,15 +264,21 @@ footer ul li {
     flex-direction: column;
     width: 100%;
     margin-left: 0;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: cadetblue;
   }
   .course img, .course span, .course p {
     display: none;
   }
   .course {
-    align-items: center;
-    width: 100%;
-    background-color: forestgreen;
-    margin-left: 0;
+    align-items: flex-start;
+    width: 90%;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    background-color: lightgrey;
+    margin-top: 4px;
   }
   .course h4 {
 
@@ -264,10 +286,26 @@ footer ul li {
   .thesis-side {
     display: none;
   }
+  .thesis-content{
+    width: 100%;
+    padding: 0;
+  }
   .thesis-main{
     width: 100%;
+    margin: 0;
   }
   .thesis-main h4, .thesis-main p {
     display: none;
+
+  }
+  .thesis-main video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .pic {
+    background-image: url(./images/information-guest-secture-mobile.jpg) no-repeat;
+
   }
 }
